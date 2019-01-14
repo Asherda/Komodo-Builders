@@ -21,3 +21,5 @@ RUN dnf -y install \
      patch && \
      dnf clean all
 
+VOLUME /build
+WORKDIR /build

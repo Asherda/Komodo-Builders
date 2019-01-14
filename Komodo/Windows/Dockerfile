@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:cosmic
 MAINTAINER Asher Dawes asher.dawes@gmail.com
 
 ENV PATH=/root/.cargo/bin:$PATH
@@ -40,4 +40,7 @@ RUN apt-get update && apt-get -y install \
   apt-get -y autoremove; \
   apt-get -y autoclean; \
   apt-get -y clean && \
-rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+VOLUME /build
+WORKDIR /build

@@ -28,4 +28,5 @@ RUN apt-get update && \
     apt-get -y clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-
+VOLUME /build
+WORKDIR /build
