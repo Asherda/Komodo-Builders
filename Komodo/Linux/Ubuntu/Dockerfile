@@ -9,6 +9,7 @@ RUN apt-get update && \
     m4 \
     autoconf \
     libboost-all-dev \
+    libsodium-dev \
     curl \
     libtool \
     make \
