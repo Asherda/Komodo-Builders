@@ -8,6 +8,8 @@ RUN apt-get update && \
     libc6-dev \
     m4 \
     autoconf \
+    libboost-all-dev \
+    libsodium-dev \
     curl \
     libtool \
     make \

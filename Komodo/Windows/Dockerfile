@@ -37,6 +37,8 @@ RUN apt-get update && apt-get -y install \
   sh -s -- --default-toolchain stable -y && \
   rustup update && \
   rustup target add x86_64-pc-windows-gnu && \
+  update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix && \
+  update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix && \
   apt-get -y autoremove; \
   apt-get -y autoclean; \
   apt-get -y clean && \
