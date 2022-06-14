@@ -1,5 +1,5 @@
-FROM ubuntu:xenial
-MAINTAINER Asher Dawes asher.dawes@gmail.com
+FROM ubuntu:bionic
+MAINTAINER Komodo Platform support@komodoplatform.com
 
 RUN apt-get update && \
     apt-get -y install \
