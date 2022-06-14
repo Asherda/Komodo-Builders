@@ -1,5 +1,5 @@
 FROM ubuntu:bionic
-MAINTAINER Asher Dawes asher.dawes@gmail.com
+MAINTAINER Komodo Platform support@komodoplatform.com
 
 RUN apt-get update && \
     apt-get -y install \
@@ -8,8 +8,6 @@ RUN apt-get update && \
     libc6-dev \
     m4 \
     autoconf \
-    libboost-all-dev \
-    libsodium-dev \
     curl \
     libtool \
     make \
